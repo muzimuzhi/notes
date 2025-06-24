@@ -328,6 +328,20 @@ Misc
   https://github.com/casey/just (README contains single-page doc)
   https://just.systems/ (multi-page doc)
 - cheatsheet https://cheatography.com/linux-china/cheat-sheets/justfile/
+- usage
+  ```shell
+  # run the default recipe
+  just
+
+  # run specified recipe(s)
+  just RECIPE...
+
+  # dry run (-n)
+  just --dry-run
+
+  # list recipes
+  just --list
+  ```
 - notice
   - each recipe line is executed by a new shell
     https://github.com/casey/just?tab=readme-ov-file#setting-variables-in-a-recipe
