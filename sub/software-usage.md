@@ -429,9 +429,12 @@ Misc
 - usage
   ```shell
   # run
-  typos
+  typos [-c/--config CUSTOM_CONFIG]
   # auto fix (-w/--write-chagnes)
   typos -w
+
+  # list unclassified files
+  typos --config .github/typos.toml --file-types | rg ': -$'
   ```
 - config
   https://github.com/crate-ci/typos/blob/master/docs/reference.md
@@ -442,6 +445,8 @@ Misc
     - Rust `regex` pattern
     - examples
       - https://github.com/latex3/latex3/blob/develop/.github/typos.toml
+      - https://github.com/latex3/l3build/blob/main/.github/typos.toml
+      - https://github.com/muzimuzhi/latex-zutil/blob/main/_typos.toml
       - [`_typos.toml` in this repo](./../_typos.toml)
 - GitHub Actions integration
   https://github.com/crate-ci/typos/blob/master/docs/github-action.md
