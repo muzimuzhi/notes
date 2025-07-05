@@ -72,6 +72,20 @@ Shortcut List
 - repo https://sourceforge.net/projects/zsh/
   github mirror https://github.com/zsh-users/zsh/
   (see intro https://zsh.sourceforge.io/Arc/git.html)
+- `which`
+  ```shell
+  $ which pdftex
+  /Library/TeX/texbin/pdftex
+
+  # print symlink free path as well
+  $ which -s pdftex
+  /Library/TeX/texbin/pdftex -> /usr/local/texlive/2025basic/bin/universal-darwin/pdftex
+
+  # show steps in the resolution of symlinks
+  $ which -S pdftex
+  /Library/TeX/texbin/pdftex -> /Library/TeX/Distributions/Programs/texbin/pdftex -> ... ->
+  /Library/TeX/Distributions/.FactoryDefaults/TeXLive-2025-Basic/Contents/Programs/../../../../../../../usr/local/texlive/2025basic/bin/universal-darwin/pdftex
+  ```
 
 ## GNU CLI Tools
 * Show dependencies as a tree: `brew deps --tree <formula>`
