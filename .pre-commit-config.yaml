@@ -1,5 +1,9 @@
 # https://pre-commit.com/
 
+ci:
+  skip:
+    - typos
+
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   # run "pre-commit autoupdate --freeze" to update the version
