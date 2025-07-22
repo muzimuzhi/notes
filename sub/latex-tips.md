@@ -9,6 +9,8 @@
   * Package dependencies, for example [ctex.tlpsrc](https://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlpsrc/ctex.tlpsrc)
     Can be updated by [`DEPENDS.txt`](https://www.tug.org/texlive/pkgcontrib.html#deps).
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
+* [tlcontrib](https://contrib.texlive.info/) - supplementary TeX Live package repository
+  used by the [workflow in `pgfplots`](https://github.com/pgf-tikz/pgfplots/blob/master/.github/workflows/main.yml) (via reusable action [`pgf-tikz/actions/install-tl`](https://github.com/pgf-tikz/actions/blob/master/install-tl/action.yml)) to install the [`acrotex` package](https://ctan.org/pkg/acrotex). The `dljslib.sty` contained in `acrotex` is needed when compiling `pgfplotstable.pdf`
 * Latest package files (compressed) [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/texlive/tlnet/archive)
 
 #### `tlmgr`
