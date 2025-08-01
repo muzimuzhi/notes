@@ -193,12 +193,16 @@ git tag -a <tag>
 # add an annotated tag
 git tag -a <tag> -m "annot"
 
-# list only lightweight tags
+# list lightweight tags only
 # ref: https://stackoverflow.com/a/67687543
 git for-each-ref refs/tags | grep commit
 
-# list only annotated tags
+# list annotated tags only
 git for-each-ref refs/tags | grep -v commit
+
+# list tags by descending semver numbers
+# https://git-scm.com/docs/git-tag#Documentation/git-tag.txt---sortkey
+git tag --sort -v:refname
 ```
 
 Push to remote
