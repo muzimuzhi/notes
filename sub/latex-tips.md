@@ -770,6 +770,17 @@ python3 `which pythontex` main
 xelatex main.tex
 ```
 
+### [pgf-tikz]
+
+Usually, the contents of `pgfpicuture` environment should not begin with `{` or `\bgroup`.
+
+```tex
+\begin{pgfpicture}{<min x>}{<min y>}{<max x>}{<max y>}
+  <contents>
+\end{pgfpicture}
+```
+was the old syntax. See `\pgf@oldpicture`.
+
 ### Replacements
 
 - [moloch] Revival (fork) of Metropolis beamer theme
