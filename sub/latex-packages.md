@@ -34,6 +34,7 @@
 | `hhline`          | tabular             | Better horizontal lines in tabulars and arrays               |
 | `ehhline`         | tabular             | Extend the `\hhline` command                                 |
 | `hlist`           | tabular/list        | Provides  `hlist` environment in which `\hitem` starts a horizontal and columned item. <br />Doc is in French only. |
+| `enumext`         | list                | multi-column enumerate list |
 |                   |                     |                                                              |
 | `csvsimple`       | data processing     | Lightweight CSV processing including filtering and table generation |
 |                   |                     |                                                              |
