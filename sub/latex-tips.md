@@ -148,21 +148,38 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 ### general
 
-- width of box overflows at ~`2\maxdimen`
+- width and height of a box overflows at ~`2\maxdimen`, not `\maxdimen`. The depth of a box is bounded above by dimension `\boxmaxdepth`.
   ```tex
   \documentclass{article}
   \begin{document}
+  % width
   \setbox0=\hbox{\hskip\maxdimen}
   \the\wd0 % 16383.99998pt
 
   \setbox0=\hbox{\hskip\maxdimen\hskip\maxdimen}
   \the\wd0 % 32767.99997pt
 
-  \setbox0=\hbox{\hskip\maxdimen\hskip\maxdimen\hskip1pt}
-  \the\wd0 % -32767.00003pt, overflows
+  \setbox0=\hbox{\hskip\maxdimen\hskip\maxdimen\hskip1sp}
+  \the\wd0 % 32767.99998pt
+
+  \setbox0=\hbox{\hskip\maxdimen\hskip\maxdimen\hskip2sp}
+  \the\wd0 % -32768.0pt, overflows
+
+  % height
+  \setbox0=\vbox{\vskip\maxdimen}
+  \the\ht0 % 16383.99998pt
+
+  \setbox0=\vbox{\vskip\maxdimen\vskip\maxdimen}
+  \the\ht0 % 32767.99997pt
+
+  \setbox0=\vbox{\vskip\maxdimen\vskip\maxdimen\vskip1sp}
+  \the\ht0 % 32767.99998pt
+
+  \setbox0=\vbox{\vskip\maxdimen\vskip\maxdimen\vskip2sp}
+  \the\ht0 % -32768.0pt, overflows
   \end{document}
   ```
-  posted in https://github.com/gpoore/fvextra/issues/28#issuecomment-2510129720, for https://github.com/T-F-S/tcolorbox/issues/304
+  based on https://github.com/gpoore/fvextra/issues/28#issuecomment-2510129720, for https://github.com/T-F-S/tcolorbox/issues/304
 
 ### pdfTeX
 
