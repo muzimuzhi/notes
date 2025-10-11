@@ -59,6 +59,12 @@
   # use git alias
   $ git logline
   ```
+- aliases
+  https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
+  - shell command aliases are always run with `sh`
+    `GIT_TRACE=1 git <alias> ...` shows the actual commands (`/bin/sh -c `); alternatively, `git var GIT_SHELL_PATH` shows the path to `sh`;
+    https://stackoverflow.com/a/46698535
+    https://stackoverflow.com/a/65086817
 
 ### Show status
 
