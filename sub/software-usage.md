@@ -320,6 +320,15 @@ git add --renormalize .
   ```
   https://git-scm.com/docs/git-describe#Documentation/git-describe.txt---always
   saw in https://github.com/tuna/thuthesis/commit/bd0481059cf97bf9fa89638ab5cd5bc2abd27fa9, for the request raised in https://github.com/tuna/thuthesis/pull/979
+- Check whether a `pathname` would be ignored, and if true, by which gitignore pattern
+  https://git-scm.com/docs/git-check-ignore
+  ```shell
+  git check-ignore [-v|--verbose] PATHNAME
+  ```
+- Show Git logical (?) variable(s)
+  ```shell
+  git var GIT_SHELL_PATH
+  ```
 
 
 <!-- ## gh -->
