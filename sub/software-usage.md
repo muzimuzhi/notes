@@ -434,6 +434,16 @@ Misc
   - faq https://github.com/BurntSushi/ripgrep/blob/master/faq.md
   - full doc is only provided as manpage
   - manpage as HTML https://manpages.debian.org/testing/ripgrep/rg.1.en.html
+- whitelist rules
+  - whitelist files under hidden directory
+    To search inside files under `.github`, only the rule `!.github` (with optional leading and trailing `/`s) without any trailing glob patterns works, and none of the following work.
+    ```ignore
+    !.github/**
+    !.github/**/*.*
+    !.github/workflows
+    ```
+    see the example in `ripgrep` itself
+    https://github.com/BurntSushi/ripgrep/commit/387df97d85291f75511dc77329395931af348b34
 
 ## typos
 
