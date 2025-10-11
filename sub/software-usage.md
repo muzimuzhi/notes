@@ -2,7 +2,7 @@
 
 ## Git
 
-General info
+### General info
 
 - `git` documentation https://git-scm.com/docs/git
   - all commands, divided into high level and low level ones
@@ -23,7 +23,7 @@ General info
   - https://github.blog/2019-08-16-highlights-from-git-2-23
     - new commands `git switch` and `git restore`
 
-Configuration
+### Configuration
 
 - new syntaxes and options since v2.46.0
   for example, `git config KEY VALUE` => `git config set KEY VALUE`
@@ -60,17 +60,17 @@ Configuration
   $ git logline
   ```
 
-Show status
+### Show status
 
 - Show individual files in untracked directories ([ref](https://git-scm.com/docs/git-status#Documentation/git-status.txt--ultmodegt))
   ```
   git status [-u | --untracked-files]
   ```
 
-Clone and fetch
+### Clone and fetch
 
 - Shallow clone: `git clone --depth=<num> [--no-single-branch]`
-  `--depth` implies `--single-branch`, thus the `fetch = +refs/heads/DEFAULT_BRANCH:refs/remotes/origin/DEFAULT_BRANCH` line in `.git/config`, which makes new branches pushed to remote not auto-tracked locally
+  - `--depth` implies `--single-branch`, thus the `fetch = +refs/heads/DEFAULT_BRANCH:refs/remotes/origin/DEFAULT_BRANCH` line in `.git/config`, which makes new branches pushed to remote not auto-tracked locally
   - To overwrite `--single-branch`, run `git remote set-branches REMOTE BRANCH` or directly edit `.git/config`
   - To query all `remote.*.fetch` settings, `git -P config get --all --show-names --regexp 'remote\..*\.fetch'`
 - Convert a shallow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
@@ -89,7 +89,7 @@ Clone and fetch
   short form `-n` https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt--n
   see also Git config [`remote.<name>.tagOpt`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-remoteltnamegttagOpt).
 
-Commit changes
+### Commit changes
 
 - Update commit author (and email)
   https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt
@@ -122,7 +122,7 @@ Workflow
 [git-rebase-autosquash]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash
 [git-fetch-refspec]: https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt-ltrefspecgt
 
-Branching and Merging
+### Branching and Merging
 
 - Create a local branch that tracks a remote one ([doc][git-fetch-refspec])
   ```bash
@@ -150,6 +150,8 @@ Branching and Merging
   ```bash
   git merge --no-ff --log <branch>
   ```
+
+### Working tree
 
 Switch to a branch or commit-ish
 
@@ -185,7 +187,7 @@ git restore --staged --worktree [--] <pathspec>...
 # -s/--source=<tree>: restore from <tree>
 ```
 
-Tags
+### Tags
 
 ```bash
 # add a lightweight tag
@@ -205,6 +207,8 @@ git for-each-ref refs/tags | grep -v commit
 git tag --sort -v:refname
 ```
 
+### Remotes
+
 Push to remote
 
 - Push single tag ([Q&A](https://stackoverflow.com/a/23212493))
@@ -221,7 +225,7 @@ Change remote
   git push --delete <remote> <branch/tag>
   ```
 
-Show log
+### Show log
 
 - List commits that changed a specific file ([ref](https://stackoverflow.com/a/8808453))
   ```bash
@@ -232,7 +236,7 @@ Show log
   git log --reverse
   ```
 
-Large File Storage (LFS)
+### Large File Storage (LFS)
 
 - homepage: https://git-lfs.github.com/
 - docs: https://github.com/git-lfs/git-lfs/tree/main/docs/man
@@ -259,7 +263,7 @@ git lfs checkout
 git add --renormalize .
 ```
 
-Misc
+### Misc
 
 - Force or cancel pager
   https://git-scm.com/docs/git#Documentation/git.txt--p
