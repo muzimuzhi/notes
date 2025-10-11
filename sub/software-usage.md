@@ -426,6 +426,14 @@ Misc
   https://github.com/muzimuzhi/latex-zutil/blob/main/.pre-commit-config.yaml
   https://github.com/crate-ci/typos/blob/master/.pre-commit-hooks.yaml
 
+## rg
+
+- repo https://github.com/BurntSushi/ripgrep
+- docs
+  - guide https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md
+  - faq https://github.com/BurntSushi/ripgrep/blob/master/faq.md
+  - full doc is only provided as manpage
+  - manpage as HTML https://manpages.debian.org/testing/ripgrep/rg.1.en.html
 
 ## typos
 
