@@ -23,7 +23,7 @@ repos:
     name: check typos
     # https://pre-commit.com/#supported-languages
     # https://pre-commit.com/#system
-    language: system
+    language: unsupported
     entry: typos
     # https://pre-commit.com/#creating-new-hooks
     pass_filenames: false
