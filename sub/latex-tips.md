@@ -891,6 +891,24 @@ Expansion
   * [List of expandable primitives](https://tex.stackexchange.com/a/467372)
     * For expandable Knuth TeX primitives, see also *TeX by Topic*, Sec. 12.2.
   * Use `\romannumeral` to get full expansion [[1](http://texhacks.blogspot.com/2010/12/forcing-full-expansion.html), [2](https://www.texdev.net/2011/07/05/expansion-using-romannumeral/)]
+  * Differences between `\noexpand` and `\unexpanded`
+    * `\unexpanded` doesn't generate special `\notexpand:<token>` tokens, thus the result of `\unexpanded` is easier to be re-expanded (learned when digging for [latex3/latex3#1805](https://github.com/latex3/latex3/issues/1805))
+      ```tex
+      \def\x{x}
+      \long\def\identity#1{#1}
+
+      % suppress expansion during building an expanded token list
+      \message{\noexpand\x}     % \x is not expanded
+      \message{\unexpanded{\x}} % \x is not expanded
+
+      % suppress expansion BEFORE building an expanded token list
+      \message\expandafter{\noexpand\x}     % \x is not expanded
+      \message\expandafter{\unexpanded{\x}} % \x IS expanded
+
+      % re-enable expansion on \noexpand-ed token
+      \message\expandafter\expandafter\expandafter{\expandafter\identity
+        \noexpand\x} % \x IS expanded
+      ```
 
 Record file I/O
   * `-recorder` command line option<br />
