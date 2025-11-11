@@ -889,7 +889,7 @@ TeX Core
 
 Expansion
   * [List of expandable primitives](https://tex.stackexchange.com/a/467372)
-    * For expandable TeX primitives, see also *TeX by Topic*, Sec. 12.2.
+    * For expandable Knuth TeX primitives, see also *TeX by Topic*, Sec. 12.2.
   * Use `\romannumeral` to get full expansion [[1](http://texhacks.blogspot.com/2010/12/forcing-full-expansion.html), [2](https://www.texdev.net/2011/07/05/expansion-using-romannumeral/)]
 
 Record file I/O
