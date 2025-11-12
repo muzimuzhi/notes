@@ -329,6 +329,14 @@ git add --renormalize .
   ```shell
   git var GIT_SHELL_PATH
   ```
+- Binary search on commit history
+  https://git-scm.com/docs/git-bisect
+  ```shell
+  git bisect start
+  git bisect bad/old [REV]
+  git bisect good/new [REV...]
+  git bisect run zsh -c "command && exit 0 || exit 1"
+  ```
 
 
 <!-- ## gh -->
