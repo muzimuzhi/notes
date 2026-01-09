@@ -1,5 +1,8 @@
 # https://pre-commit.com/
 
+# required by "language: unsupported" hooks
+minimum_pre_commit_version: "4.4.0"
+
 ci:
   skip:
     - typos
