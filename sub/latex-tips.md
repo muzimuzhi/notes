@@ -28,7 +28,7 @@
   - `--only-installed`
   - `--list`, list contents
 ```bash
-# FIXME: need no indent to enable highlighting
+# FIXME: any indent disables highlighting
 # list all schemes (installed are prefixed with "!")
 tlmgr info schemes
 
@@ -44,6 +44,7 @@ tlmgr info amsmath
 # show content of a scheme/collection/package under "depends" or "run files" key
 tlmgr info --list scheme-basic
 
+# show dependencies
 tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5]'
 # ["amsfonts","bibtex","cm","colorprofiles","dvipdfmx"]
 ```
