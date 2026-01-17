@@ -44,6 +44,11 @@ tlmgr info amsmath
 # show content of a scheme/collection/package under "depends" or "run files" key
 tlmgr info --list scheme-basic
 
+# show remote revision
+tlmgr info l3build --data "remoterev"
+# or
+tlmgr info l3build --json | jq '.[].rrev'
+
 # show dependencies
 tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5]'
 # ["amsfonts","bibtex","cm","colorprofiles","dvipdfmx"]
