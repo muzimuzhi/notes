@@ -109,48 +109,41 @@ Shortcut List
 
 https://docs.brew.sh/Manpage
 
-- Display local location of Homebrew itself or one of cloned tap
-  https://docs.brew.sh/Manpage#--repository---repo-tap-
-  `brew [--repository|--repo] [OWNER/REPO]`
-  ```bash
-  # /usr/local/Homebrew
-  cd $(brew --repository)
+```shell
+# show local location of Homebrew itself or tap
+# https://docs.brew.sh/Manpage#--repository---repo-tap-
+#
+# Examples
+#   brew --repository             => /usr/local/Homebrew
+#   brew --repo homebrew/services => /usr/local/Homebrew/Library/Taps/homebrew/homebrew-services
+#   brew --repo OWNER/REPO        => "$(brew --repo)"/Library/Taps/OWNER/(homebrew-)REPO
+brew [--repository|--repo] [OWNER/REPO]
 
-  # tap OWNER/REPO is located in $(brew --repo)/Library/Taps/OWNER/homebrew-REPO
-  brew --repo homebrew/services
-  brew --repo dart-lang/dart
-  ```
+# show (installed) dependents of a formula
+#  https://docs.brew.sh/Manpage#uses-options-formula-
+brew uses --recursive --installed FORMULA
 
-- Show (installed) dependents of a formula
-  https://docs.brew.sh/Manpage#uses-options-formula-
-  `brew uses --recursive --installed FORMULA`
-  saw in https://stackoverflow.com/a/66142860
+# show dependencies of a formula
+# https://docs.brew.sh/Manpage#deps-options-formulacask-
+brew deps FORMULA
 
-- Show dependencies of a formula
-  https://docs.brew.sh/Manpage#deps-options-formulacask-
-  `brew deps FORMULA`
+# list non-dependency installed formulae
+# https://docs.brew.sh/Manpage#leaves---installed-on-request---installed-as-dependency
+brew leaves
 
-- List non-dependency installed formulae
-  https://docs.brew.sh/Manpage#leaves---installed-on-request---installed-as-dependency
-  `brew leaves`
+# bump a formula or cask
+# Application: GitHub Action workflow `brew-bump-pr.yml`
+#   https://github.com/muzimuzhi/hello-github-actions/blob/main/.github/workflows/brew-bump-pr.yml
+# https://docs.brew.sh/Manpage#bump-formula-pr-options-formula
+# https://docs.brew.sh/Manpage#bump-cask-pr-options-cask
+brew bump-formula-pr --version=VERSION [--write-only] FORMULA
+brew bump-cask-pr --version=VERSION [--write-only] cask
 
-- List formulae and casks in a tap
-  https://docs.brew.sh/Manpage#tap-info---installed---json-tap-
-  ```bash
-  brew tap-info --json TAP | jq -r '.[] | (.formula_names[], .cask_tokens[])'
-  ```
-  saw in https://apple.stackexchange.com/a/392993
-
-- Bump a formula or cask
-  https://docs.brew.sh/Manpage#bump-formula-pr-options-formula
-  https://docs.brew.sh/Manpage#bump-cask-pr-options-cask
-  ```bash
-  brew bump-formula-pr --version=VERSION [--write-only] FORMULA
-  brew bump-cask-pr --version=VERSION [--write-only] cask
-  ```
-  Application: my `workflow_dispatch`-triggerable GitHub Action workflow [`brew-bump-pr.yml`][brew-bump-pr.yml].
-
-  [brew-bump-pr.yml]: https://github.com/muzimuzhi/hello-github-actions/blob/main/.github/workflows/brew-bump-pr.yml
+# list formulae and casks in a tap
+# saw in https://apple.stackexchange.com/a/392993
+# https://docs.brew.sh/Manpage#tap-info---installed---json-tap-
+brew tap-info --json TAP | jq -r '.[] | (.formula_names[], .cask_tokens[])'
+```
 
 ### Writing formulae and casks
 
