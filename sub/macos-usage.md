@@ -131,6 +131,12 @@ brew deps FORMULA
 # https://docs.brew.sh/Manpage#leaves---installed-on-request---installed-as-dependency
 brew leaves
 
+# show provider(s) of a command
+#
+# Example:
+#   brew which-formula rst2html => docutils
+brew which-formula COMMAND
+
 # bump a formula or cask
 # Application: GitHub Action workflow `brew-bump-pr.yml`
 #   https://github.com/muzimuzhi/hello-github-actions/blob/main/.github/workflows/brew-bump-pr.yml
