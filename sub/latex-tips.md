@@ -273,11 +273,13 @@ Specials
 Only `texdoc` names listed.
 
 - Basic: `source2e`, `classes`, `clsguide`, `usrguide`, `fntguide`, `encguide`
-- Per module
-  - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara`
-  - Other new modules\*: `ltsockets`, `lttemplates`, `ltproperties`, `ltmarks`
-  - First aid: `firstaid`
-  - see also https://www.latex-project.org/help/documentation/ and https://ctan.org/tex-archive/macros/latex/base
+- New commands
+  - All-in-one: `latex-cmds` (since LaTeX 2026-06-01, est.; proposed by [latex3/latex2e#1980])
+  - Per module
+    - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara`
+    - Other new modules\*: `ltsockets`, `lttemplates`, `ltproperties`, `ltmarks`
+    - First aid: `firstaid`
+    - see also https://www.latex-project.org/help/documentation/ and https://ctan.org/tex-archive/macros/latex/base
 - LaTeX-lab: `documentmetadata-support`\*, `latex-lab-footnotes`, `latex-lab-new-or`, `latex-lab-prototype`, `latex-lab-testphase`
 - LaTeX3:
   - `expl3.pdf`, `interface3` (aliases `expl3` and `l3`), `l3doc`, `source3`, `l3backend`
@@ -288,6 +290,7 @@ Only `texdoc` names listed.
 
 \*: with variants `-doc` and `-code`
 
+[latex3/latex2e#1980]: https://github.com/latex3/latex2e/pull/1980
 [texdoc-new-alias]: https://github.com/TeX-Live/texdoc/commit/de1ebc7919e3a505988b2d3184df79ff1aec777e
 
 #### Dependencies of `latex.ltx`
