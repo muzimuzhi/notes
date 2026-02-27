@@ -274,7 +274,8 @@ Only `texdoc` names listed.
 
 - Basic: `source2e`, `classes`, `clsguide`, `usrguide`, `fntguide`, `encguide`
 - New commands
-  - All-in-one: `latex-cmds` (since LaTeX 2026-06-01, est.; proposed by [latex3/latex2e#1980])
+  - All-in-one: `cmdguide`\
+    (since LaTeX 2026-06-01; initially added as [`latex-cmds`][latex2e-latex-cmds] and later [renamed][latex2e-cmdguide] to current name)
   - Per module
     - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara`
     - Other new modules\*: `ltsockets`, `lttemplates`, `ltproperties`, `ltmarks`
@@ -290,7 +291,8 @@ Only `texdoc` names listed.
 
 \*: with variants `-doc` and `-code`
 
-[latex3/latex2e#1980]: https://github.com/latex3/latex2e/pull/1980
+[latex2e-latex-cmds]: https://github.com/latex3/latex2e/pull/1980
+[latex2e-cmdguide]: https://github.com/latex3/latex2e/commit/35734c14067e2442c2c2ccc67e08f535e0ec6951
 [texdoc-new-alias]: https://github.com/TeX-Live/texdoc/commit/de1ebc7919e3a505988b2d3184df79ff1aec777e
 
 #### Dependencies of `latex.ltx`
