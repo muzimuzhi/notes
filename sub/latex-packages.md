@@ -24,6 +24,12 @@ List
 - `enumext` Multi-column enumerate list
 - `tasks` Horizontally columned lists
 
+### Misc
+
+Color management
+
+- `spotxcolor` spot color support for `xcolor`
+
 ### Misc (in old format)
 
 | Name              | Category            | Description                                                  |
