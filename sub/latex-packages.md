@@ -12,12 +12,14 @@ New table implementations
 - `nicematrix`
 
 Add-ons to the classic `tabular` + `array` ecosystem
+
 - `fcolumn` Adds column type `F/f` for aligning text and currency amounts, and`\sumline` command.
 - `boldline` Variable-width h/v-lines in tabular. Contained in `shipunov` bundle
 - `hhline` Better horizontal lines in `tabular`s and `array`s
 - `ehhline` Extend the `\hhline` command
 
 List
+
 - `hlist` Provides `hlist` environment in which `\hitem` starts a horizontal and columned item. Doc is in French only.
 - `enumext` Multi-column enumerate list
 - `tasks` Horizontally columned lists
