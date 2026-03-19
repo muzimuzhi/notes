@@ -2,6 +2,28 @@
 
 ## Macro Packages
 
+### Tabular and list
+
+New table implementations
+
+- `keyvaltable` Re-usable table layouts separating content and presentation
+- `tabular2` Table typesetting rewritten in `expl3` and `l3draw`, separating content and style
+- `tabularray`
+- `nicematrix`
+
+Add-ons to the classic `tabular` + `array` ecosystem
+- `fcolumn` Adds column type `F/f` for aligning text and currency amounts, and`\sumline` command.
+- `boldline` Variable-width h/v-lines in tabular. Contained in `shipunov` bundle
+- `hhline` Better horizontal lines in `tabular`s and `array`s
+- `ehhline` Extend the `\hhline` command
+
+List
+- `hlist` Provides `hlist` environment in which `\hitem` starts a horizontal and columned item. Doc is in French only.
+- `enumext` Multi-column enumerate list
+- `tasks` Horizontally columned lists
+
+### Misc (in old format)
+
 | Name              | Category            | Description                                                  |
 | ----------------- | ------------------- | ------------------------------------------------------------ |
 | `wiki`            | text markup         | Use wiki-style markup                                        |
@@ -27,14 +49,6 @@
 | `tocdata`         | table of contents   | Add a small amount of data to an entry in `toc`              |
 | `fncychap`        | section style       | Seven predefined chapter heading styles                      |
 | `centeredline`    | paragraph alignment | Extends latex2e macro`\centerline`                           |
-|                   |                     |                                                              |
-| `keyvaltable`     | tabular             | Re-usable table layouts separating content and presentation  |
-| `fcolumn`         | tabular             | Adds column type `F/f` for aligning text and currency amounts, and`\sumline` command. |
-| `boldline`        | tabular             | Variable-width h/v-lines in tabular. Contained in `shipunov` bundle |
-| `hhline`          | tabular             | Better horizontal lines in tabulars and arrays               |
-| `ehhline`         | tabular             | Extend the `\hhline` command                                 |
-| `hlist`           | tabular/list        | Provides  `hlist` environment in which `\hitem` starts a horizontal and columned item. <br />Doc is in French only. |
-| `enumext`         | list                | multi-column enumerate list |
 |                   |                     |                                                              |
 | `csvsimple`       | data processing     | Lightweight CSV processing including filtering and table generation |
 |                   |                     |                                                              |
