@@ -26,6 +26,11 @@ List
 
 ### Misc
 
+- `svg-animate` based on tikz\
+  https://github.com/renard/svg-animate
+
+### Misc - old
+
 Color management
 
 - `spotxcolor` spot color support for `xcolor`
