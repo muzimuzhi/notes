@@ -10,7 +10,9 @@ Programming in TeX
 
 Execute or bridge to foreign languages
 
+- `bashful`
 - `lt3luabridge` Execute Lua code in any TeX engine that exposes the shell
+- `runcode` Execute foreign source code and embed the result in the pdf file
 
 (see also CTAN topics [Callback], [Exec foreign], and [External code])
 
