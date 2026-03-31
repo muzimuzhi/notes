@@ -7,6 +7,7 @@
 Programming in TeX
 
 - `parselines` Simple input line parser
+- `tokstools` Match, capture, and replace tokens using PEG-type grammars
 
 Execute or bridge to foreign languages
 
