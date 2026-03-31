@@ -4,10 +4,10 @@
 
 ### TeX Live
 
-* [SVN repo](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
+* [SVN repo](https://tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
   * Revision webview, for example [revision 61285](https://tug.org/svn/texlive?view=revision&revision=61285)
-  * Package dependencies, for example [ctex.tlpsrc](https://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlpsrc/ctex.tlpsrc)
-    Can be updated by [`DEPENDS.txt`](https://www.tug.org/texlive/pkgcontrib.html#deps).
+  * Package dependencies, for example [ctex.tlpsrc](https://tug.org/svn/texlive/trunk/Master/tlpkg/tlpsrc/ctex.tlpsrc)
+    Can be updated by [`DEPENDS.txt`](https://tug.org/texlive/pkgcontrib.html#deps).
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
 * [tlcontrib](https://contrib.texlive.info/) - supplementary TeX Live package repository
   * used by the [workflow in `pgfplots`](https://github.com/pgf-tikz/pgfplots/blob/master/.github/workflows/main.yml) (via reusable action [`pgf-tikz/actions/install-tl`](https://github.com/pgf-tikz/actions/blob/master/install-tl/action.yml)) to install the [`acrotex` package](https://ctan.org/pkg/acrotex). The `acrotex` package provides `dljslib.sty` which is needed when compiling `pgfplotstable.pdf`
@@ -15,13 +15,13 @@
 
 #### `tlmgr`
 
-- TUG page https://www.tug.org/texlive/tlmgr.html
-- Online doc https://www.tug.org/texlive/doc/tlmgr.html
+- TUG page https://tug.org/texlive/tlmgr.html
+- Online doc https://tug.org/texlive/doc/tlmgr.html
 - Configuration file `kpsewhich -a texmf.cnf`
   in texlive repo https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf
 
 - Show info of one or more of scheme/collection/package
-  https://www.tug.org/texlive/doc/tlmgr.html#info
+  https://tug.org/texlive/doc/tlmgr.html#info
   ```
   $ tlmgr info [option...] [name...]
   ```
@@ -65,7 +65,7 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
     ```
 
 - Show or modify user configurations
-  https://www.tug.org/texlive/doc/tlmgr.html#conf
+  https://tug.org/texlive/doc/tlmgr.html#conf
   ```bash
   # show all config settings
   $ tlmgr conf [texmf | tlmgr | updmap]
@@ -195,10 +195,10 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 ### pdfTeX
 
-* TUG page: https://www.tug.org/applications/pdftex/
+* TUG page: https://tug.org/applications/pdftex/
 * Mailing List Archives: https://tug.org/pipermail/pdftex/
 * Repository: https://tug.org/svn/pdftex/branches/stable
-* Release news: on [TUG website](http://www.tug.org/applications/pdftex/NEWS) or from [source repo](http://tug.org/svn/pdftex/branches/stable/source/src/texk/web2c/pdftexdir/NEWS?view=markup)
+* Release news: on [TUG website](http://tug.org/applications/pdftex/NEWS) or from [source repo](http://tug.org/svn/pdftex/branches/stable/source/src/texk/web2c/pdftexdir/NEWS?view=markup)
 
 ### XeTeX
 
@@ -251,7 +251,7 @@ Specials
 * Source directory in TeX Live's [SVN repo][dvipdfm-x-svn] and [GitHub mirror][dvipdfm-x-github]
    * Shunsaku Hirata's fork https://github.com/shirat74/dvipdfm-x/
 * Mailing list: `dvipdfmx@tug`, [archives](https://tug.org/pipermail/dvipdfmx/)
-* Build and test: _Building TeX Live (2020)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
+* Build and test: _Building TeX Live (2020)_, [Sec. 4.5](https://tug.org/texlive/doc/tlbuild.html#Build-one-package).
     * Update binary file. Substitute file `xdvipdfmx` resides in `` `kpsewhich --var-value TEXMFDIST`/../bin/<os-dependent-dir> ``.
 * Config file: `dvipdfmx.cfg`, located in
     ```bash
@@ -267,7 +267,7 @@ Specials
     https://tug.org/pipermail/dvipdfmx/2020-September/000105.html
 
 
-[dvipdfm-x-svn]: https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
+[dvipdfm-x-svn]: https://tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
 [dvipdfm-x-github]: https://github.com/TeX-Live/texlive-source/tree/trunk/texk/dvipdfm-x
 
 ## Formats
@@ -935,7 +935,7 @@ Record file I/O
 
 Font
   * OpenType Math Fonts
-    * BachoTEX 2009, Ulrik Vieth. OpenType Math Illuminated ([preprint](https://www.tug.org/~vieth/papers/bachotex2009/ot-math-paper.pdf), [tugboat vol. 30](http://tug.org/TUGboat/tb30-1/tb94vieth.pdf))
+    * BachoTEX 2009, Ulrik Vieth. OpenType Math Illuminated ([preprint](https://tug.org/~vieth/papers/bachotex2009/ot-math-paper.pdf), [tugboat vol. 30](http://tug.org/TUGboat/tb30-1/tb94vieth.pdf))
     * BachoTEX 2019, Ulrik Vieth. [OpenType Math Fonts: What’s new or noteworthy?](http://www.gust.org.pl/bachotex/2019-pl/presentations/uvieth-1-2019.pdf)
     * 2018, Xiangdong Zeng. [Bibliography](https://github.com/firamath/firamath.github.io/blob/master/bibliography.md) of font firamath
 
@@ -961,7 +961,7 @@ Meta
 
 #### JavaTeX Project, by Timothy Murphy
 
-An introduction to this Project is published on [1999 TUGboat](https://www.tug.org/TUG99-web/pdf/murphy.pdf). This project is also uploaded to CTAN as a package [named `javatex`](https://ctan.org/pkg/javatex). The performance is so poor that the author "considers it unusable in practice", by its readme on CTAN.
+An introduction to this Project is published on [1999 TUGboat](https://tug.org/TUG99-web/pdf/murphy.pdf). This project is also uploaded to CTAN as a package [named `javatex`](https://ctan.org/pkg/javatex). The performance is so poor that the author "considers it unusable in practice", by its readme on CTAN.
 
 ## Journals
 
