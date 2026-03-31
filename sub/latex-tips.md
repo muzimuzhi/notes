@@ -44,10 +44,16 @@ tlmgr info amsmath
 # show content of a scheme/collection/package under "depends" or "run files" key
 tlmgr info --list scheme-basic
 
-# show remote revision
-tlmgr info l3build --data "remoterev"
-# or
-tlmgr info l3build --json | jq '.[].rrev'
+# show local and remote revisions
+# i) using --data option
+tlmgr info l3build --data "localrev,remoterev"
+# example output: 78513,78513
+# example output: 0,78513 (0 indicates uninstalled)
+# ii) using --json option
+tlmgr info l3build --json | jq '.[] | {"local": .lrev, "remote": .rrev}'
+# or one-line output
+tlmgr info l3build --json | jq -r '.[] | "local-rev: \(.lrev), remote-rev: \(.rrev)"'
+# example output: local-rev: 78513, remote-rev: 78513
 
 # show dependencies
 tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5]'
