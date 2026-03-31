@@ -2,6 +2,31 @@
 
 ## Macro Packages
 
+### Programming
+
+Programming in TeX
+
+- `parselines` Simple input line parser
+
+Execute or bridge to foreign languages
+
+- `lt3luabridge` Execute Lua code in any TeX engine that exposes the shell
+
+For fun
+
+- `lisp-on-tex` LISP interpreter written in TeX macros, which supports static scoping, dynamic typing, and eager evaluation
+
+Historic
+
+- `texapi` Format-independent `etoolbox` (replaced by `l3kernel`)
+- `ltxcmds` Utility macros from LaTeX kernel, exported into `ltx@` namespace (replaced by `l3kernel`)
+- `letltxmacro` Let assignment for robust or opt-arg LaTeX macros (replaced by `\CopyCommand` in LaTeX kernel)
+
+### Demonstration and debugging
+
+- `visualtoks` Typeset token list in TeXbook style, with catcodes in subscript
+- `unravel` Watch TeX digest tokens
+
 ### Tabular and list
 
 New table implementations
@@ -72,20 +97,12 @@ Color management
 |                   |                     |                                                              |
 | `beamertheme-tcolorbox` | beamer        | Beamer inner theme reproducing standard beamer blocks in `tcolorbox` |
 | `lstaddons`       | code listing        | `listings` add-ons: autogobble and line background           |
-| `visualtoks`      | macro demonstration | Visualizes token list in TeXbook style, with catcodes in subscript  |
 |                   |                     |                                                              |
 | `changes`         | editorial           | Markup change in text manually                               |
 |                   |                     |                                                              |
 | `sesamanuel`      | class or template   | Class and package for sesamath books or paper                |
 |                   |                     |                                                              |
 | `expkv-def`       | key-value           | A key-defining frontend for `expkv`                          |
-| `unravel`         | programming         | Watches TeX digest tokens                                    |
-| `lisp-on-tex`     | programming         | Implements static scoping, dynamic typing, and eager evaluation LISP interpreter written in TeX macros |
-| `texapi`          | programming         | Format-independent `etoolbox`                                |
-| `lt3luabridge`    | programming         | Execute Lua code in any TeX engine that exposes the shell |
-| `ltxcmds`         | programming         | Utility macros from LaTeX kernel                             |
-| `letltxmacro`     | programming         | `\LetLtxMacro` takes care of robust or opt-arg macros        |
-| `parselines`      | programming         | A simple input line parser                                   |
 | `silence`         | compilation/log     | Filters errors and warnings produced by standard macros.     |
 | `snapshot`        | compilation         | List the external dependencies                               |
 | `hypdoc`          | PDF feature         | Adds more links of references.                               |
