@@ -12,6 +12,8 @@ Execute or bridge to foreign languages
 
 - `lt3luabridge` Execute Lua code in any TeX engine that exposes the shell
 
+(see also CTAN topics [Callback], [Exec foreign], and [External code])
+
 For fun
 
 - `lisp-on-tex` LISP interpreter written in TeX macros, which supports static scoping, dynamic typing, and eager evaluation
@@ -21,6 +23,10 @@ Historic
 - `texapi` Format-independent `etoolbox` (replaced by `l3kernel`)
 - `ltxcmds` Utility macros from LaTeX kernel, exported into `ltx@` namespace (replaced by `l3kernel`)
 - `letltxmacro` Let assignment for robust or opt-arg LaTeX macros (replaced by `\CopyCommand` in LaTeX kernel)
+
+[Callback]: https://ctan.org/topic/callback
+[Exec foreign]: https://ctan.org/topic/exec-foreign
+[External code]: https://ctan.org/topic/ext-code
 
 ### Demonstration and debugging
 
