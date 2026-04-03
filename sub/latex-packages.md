@@ -61,6 +61,7 @@ List
 
 ### Misc
 
+- `keytheorems` good alternative to `thmtools`
 - `svg-animate` based on tikz\
   https://github.com/renard/svg-animate
 
