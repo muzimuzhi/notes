@@ -69,6 +69,7 @@ Graphics
 - `keytheorems` good alternative to `thmtools`
 - `svg-animate` based on tikz\
   https://github.com/renard/svg-animate
+- `cprotect` allow verbatim in macro arguments
 
 ### Misc - old
 
