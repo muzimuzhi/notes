@@ -53,13 +53,13 @@ Add-ons to the classic `tabular` + `array` ecosystem
 - `hhline` Better horizontal lines in `tabular`s and `array`s
 - `ehhline` Extend the `\hhline` command
 
-List
+### List
 
 - `hlist` Provides `hlist` environment in which `\hitem` starts a horizontal and columned item. Doc is in French only.
 - `enumext` Multi-column enumerate list
 - `tasks` Horizontally columned lists
 
-Graphics
+### Graphics
 
 - `luadraw` Draw 2d and 3d graphics (not uploaded to CTAN yet; https://github.com/pfradin/luadraw)
 - `tkz-grapheur` Function grapher
