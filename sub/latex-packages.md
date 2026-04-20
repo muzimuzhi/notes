@@ -34,6 +34,7 @@ Historic
 
 ### Demonstration and debugging
 
+- `unicodefonttable` Font table generator for unicode and 7/8-bit fonts. Replace `fonttable`
 - `visualtoks` Typeset token list in TeXbook style, with catcodes in subscript
 - `unravel` Watch TeX digest tokens
 
