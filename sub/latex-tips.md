@@ -100,11 +100,15 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 - `texdoc kpathsea`, sec. 5.6.1 "Path searching options"
 
-<!-- to please markdown parser -->
-  ```bash
-  # --format
-  kpsewhich --format=texmfscripts arara.sh
-  ```
+
+```shell
+# find files under TDS/texmf-dist/scripts
+kpsewhich --format=texmfscripts arara.sh
+kpsewhich --format=texmfscripts latexminted.py
+
+# find files under TDS/tex/latex-dev only
+kpsewhich --progname=latex-dev expl3-code.tex
+```
 
 ### MiKTeX
 
