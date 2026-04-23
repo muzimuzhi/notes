@@ -67,10 +67,10 @@ Add-ons to the classic `tabular` + `array` ecosystem
 
 ### Misc
 
-- `keytheorems` good alternative to `thmtools`
-- `svg-animate` based on tikz\
-  https://github.com/renard/svg-animate
-- `cprotect` allow verbatim in macro arguments
+- `cprotect` Allow verbatim in macro arguments
+- `fontsetup` A front-end to fontspec, for selected fonts with math support
+- `keytheorems` Good alternative to `thmtools`
+- `svg-animate` Generate animated SVG diagrams with TikZ
 
 ### Misc - old
 
