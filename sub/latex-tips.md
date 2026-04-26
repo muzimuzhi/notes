@@ -282,7 +282,7 @@ Specials
 
 Only `texdoc` names listed.
 
-- Basic: `source2e`, `classes`, `clsguide`, `usrguide`, `fntguide`, `encguide`
+- Basic: `source2e`, `classes`, `clsguide`, `usrguide`, `cmdguide`, `fntguide`, `encguide`
 - New commands
   - All-in-one: `cmdguide`\
     (since LaTeX 2026-06-01; initially added as [`latex-cmds`][latex2e-latex-cmds] and later [renamed][latex2e-cmdguide] to current name)
@@ -297,7 +297,10 @@ Only `texdoc` names listed.
     - due to new `texdoc` aliases added in texdoc v4.1, now `texdoc expl3` opens `interface3.pdf` and to open `expl3.pdf` one needs `texdoc expl3.pdf`.\
       [TeX-Live/texdoc@de1ebc7][texdoc-new-alias] (aliases for expl3 and xparse, requested by LaTeX team, 2024-02-23)
   - `l3prefixes`, `l3styleguide`, `l3syntax-changes`, `l3term-glossary`
-  - historic: `l3docstrip` (moved to `docstrip`), `l3news`, `l3news(01..12)`
+  - historic:
+    - `clsguide-historic` and `usrguide-historic`
+    - `l3docstrip` (moved to `docstrip`)
+    - `l3news` and `l3news(01..12)`
 
 \*: with variants `-doc` and `-code`
 
