@@ -60,7 +60,11 @@ Add-ons to the classic `tabular` + `array` ecosystem
 - `enumext` Multi-column enumerate list
 - `tasks` Horizontally columned lists
 
-### Graphics
+### Graphics inclusion
+
+- `newpax` Extract and reinsert PDF annotations
+
+### Graphics drawing
 
 - `luadraw` Draw 2d and 3d graphics (not uploaded to CTAN yet; https://github.com/pfradin/luadraw)
 - `tkz-grapheur` Function grapher
