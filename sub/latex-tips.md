@@ -98,10 +98,13 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 #### `kpsewhich`
 
-- `texdoc kpathsea`, sec. 5.6.1 "Path searching options"
+- `texdoc kpathsea`, sec. 5.6.2 "Path searching options"
 
 
 ```shell
+# pass a texmf.cnf config line
+kpsewhich --cnf-line=LINE ...
+
 # find files under TDS/texmf-dist/scripts
 kpsewhich --format=texmfscripts arara.sh
 kpsewhich --format=texmfscripts latexminted.py
