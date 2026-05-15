@@ -98,8 +98,17 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 #### `kpsewhich`
 
-- `texdoc kpathsea`, sec. 5.6.2 "Path searching options"
+`texdoc kpathsea`, Kpathsea library
 
+- doc sec. 5.3.1 "Default expansion"
+
+  Extra colon (leading, trailing, or doubled) inserts "default value"
+
+```shell
+TEXINPUTS=build/unpack xelatex test-dev.tex
+```
+
+- doc sec. 5.6.2 "Path searching options"
 
 ```shell
 # pass a texmf.cnf config line
