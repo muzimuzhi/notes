@@ -32,12 +32,6 @@ Historic
 [Exec foreign]: https://ctan.org/topic/exec-foreign
 [External code]: https://ctan.org/topic/ext-code
 
-### Demonstration and debugging
-
-- `unicodefonttable` Font table generator for unicode and 7/8-bit fonts. Replace `fonttable`
-- `visualtoks` Typeset token list in TeXbook style, with catcodes in subscript
-- `unravel` Watch TeX digest tokens
-
 ### Tabular and list
 
 New table implementations
@@ -68,6 +62,13 @@ Add-ons to the classic `tabular` + `array` ecosystem
 
 - `luadraw` Draw 2d and 3d graphics (not uploaded to CTAN yet; https://github.com/pfradin/luadraw)
 - `tkz-grapheur` Function grapher
+
+### Demonstration and debugging
+
+- `unicodefonttable` Font table generator for unicode and 7/8-bit fonts. Replace `fonttable`
+- `visualtoks` Typeset token list in TeXbook style, with catcodes in subscript
+- `unravel` Watch TeX digest tokens
+- `xmeaning` Enhanced `\meaning`
 
 ### Misc
 
