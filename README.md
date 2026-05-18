@@ -16,7 +16,7 @@
   * Guideline to docs and other resources
     * recommended LaTeX packages (TODO)
     * valuable documents on CTAN (TODO)
-    * [other online resources](sub/online-resources.md)
+    * [other online resources](sub/latex-online-resources.md)
   * Cheatsheet
     * [`geometry`](sub/latex-geometry.md)
     * [`xparse`](sub/latex-xparse.md)
