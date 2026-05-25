@@ -976,6 +976,9 @@ Meta
     * [Prefer `article` to `minimal` LaTeX class](https://tex.stackexchange.com/a/42115) in MWE
   * [How to upgrade TeX distribution?](https://tex.stackexchange.com/q/55437)
 
+Shell completion
+  - Zsh built-in https://github.com/zsh-users/zsh/blob/master/Completion/Unix/Command/_tex
+
 ### TeX in Other Programming Languages
 
 #### JavaTeX Project, by Timothy Murphy
