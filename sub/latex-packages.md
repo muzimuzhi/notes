@@ -60,7 +60,7 @@ Add-ons to the classic `tabular` + `array` ecosystem
 
 ### Graphics drawing
 
-- `luadraw` Draw 2d and 3d graphics (not uploaded to CTAN yet; https://github.com/pfradin/luadraw)
+- `luadraw` Draw 2d and 3d graphics
 - `tkz-grapheur` Function grapher
 
 ### Demonstration and debugging
