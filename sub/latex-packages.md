@@ -60,6 +60,7 @@ Add-ons to the classic `tabular` + `array` ecosystem
 
 ### Graphics drawing
 
+- `hawkdraw` `l3draw` frontend with a TikZ-style syntax
 - `luadraw` Draw 2d and 3d graphics
 - `tkz-grapheur` Function grapher
 
