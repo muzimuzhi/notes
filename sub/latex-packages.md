@@ -41,14 +41,14 @@ New table implementations
 - `tabularray`
 - `nicematrix`
 
-Add-ons to the classic `tabular` + `array` ecosystem
+Add-ons to the classic `tabular`/`array`
 
 - `fcolumn` Adds column type `F/f` for aligning text and currency amounts, and`\sumline` command.
 - `boldline` Variable-width h/v-lines in tabular. Contained in `shipunov` bundle
 - `hhline` Better horizontal lines in `tabular`s and `array`s
 - `ehhline` Extend the `\hhline` command
 
-### List
+List
 
 - `hlist` Provides `hlist` environment in which `\hitem` starts a horizontal and columned item. Doc is in French only.
 - `enumext` Multi-column enumerate list
@@ -60,9 +60,9 @@ Add-ons to the classic `tabular` + `array` ecosystem
 
 ### Graphics drawing
 
-- `hawkdraw` `l3draw` frontend with a TikZ-style syntax
-- `luadraw` Draw 2d and 3d graphics
+- `hawkdraw` Frontend for `l3draw` with a TikZ-style syntax
 - `tkz-grapheur` Function grapher
+- `luadraw` 2d and 3d graphics (also recorded in _[Lua-only](#lua-only)_)
 
 ### Demonstration and debugging
 
@@ -71,10 +71,22 @@ Add-ons to the classic `tabular` + `array` ecosystem
 - `unravel` Watch TeX digest tokens
 - `xmeaning` Enhanced `\meaning`
 
+### LuaTeX-only
+
+- `lua-ul` Underlining
+- `lua-unicode-math` OpenType Math font support
+- `lua-visual-debug` Visual debugging
+- `luadraw` 2d and 3d graphics (also recorded in _[Graphics drawing](#graphics-drawing)_)
+- `lualineno` Line numbering
+
+(See also CTAN topic [LuaTeX])
+
+[LuaTeX]: https://ctan.org/topic/luatex
+
 ### Misc
 
 - `cprotect` Allow verbatim in macro arguments
-- `fontsetup` A front-end to fontspec, for selected fonts with math support
+- `fontsetup` A front-end to `fontspec`, for selected fonts with math support
 - `keytheorems` Good alternative to `thmtools`
 - `svg-animate` Generate animated SVG diagrams with TikZ
 
