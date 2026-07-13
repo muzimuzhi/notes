@@ -79,6 +79,7 @@ List
 - `lua-visual-debug` Visual debugging
 - `luadraw` 2d and 3d graphics (also recorded in _[Graphics drawing](#graphics-drawing)_)
 - `lualineno` Line numbering
+- `marginalia` Margin notes
 
 (See also CTAN topic [LuaTeX])
 
