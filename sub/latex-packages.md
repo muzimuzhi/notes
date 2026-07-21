@@ -77,6 +77,7 @@ List
 - `lua-ul` Underlining
 - `lua-unicode-math` OpenType Math font support
 - `lua-visual-debug` Visual debugging
+- `luabreakurl` Breakable URLs with configurable continuation marks
 - `luadraw` 2d and 3d graphics (also recorded in _[Graphics drawing](#graphics-drawing)_)
 - `lualineno` Line numbering
 - `marginalia` Margin notes
