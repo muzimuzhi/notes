@@ -5,6 +5,7 @@
 ### General info
 
 - `git` documentation https://git-scm.com/docs/git
+  - cli conventions https://git-scm.com/docs/gitcli
   - all commands, divided into high level and low level ones
     https://git-scm.com/docs/git#_git_commands
   - `git reset`, `git restore` and `git revert`
