@@ -272,6 +272,12 @@ git add --renormalize .
 
 ### Misc
 
+- Protect untrusted arguments
+  https://git-scm.com/docs/gitcli
+  ```bash
+  git remote add [<options>] -- <name> <url>
+  git diff [<options>] --end-of-options [<commit>] [--] [<path>...]
+  ```
 - Force or cancel pager
   https://git-scm.com/docs/git#Documentation/git.txt--p
   https://git-scm.com/docs/git#Documentation/git.txt--P
