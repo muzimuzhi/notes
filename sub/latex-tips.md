@@ -408,7 +408,13 @@ $ tlmgr conf texmf OSFONTDIR <path>
 
 ### `explcheck`
 
+- default config: https://github.com/Witiko/expltools/blob/main/explcheck/src/explcheck-config.toml
+  find usage in https://github.com/Witiko/expltools/blob/main/CHANGES.md
+- exceptions configured for the whole TeX Live (under `package` and `filename` TOML sections)
+  https://github.com/Witiko/expltools/blob/main/.explcheckrc
+
 - Use developing `explcheck`
+  learned from its CI: workflow [`main.yml`](https://github.com/Witiko/expltools/blob/main/.github/workflows/main.yml), job `explcheck`
   ```bash
   cd /path/to/explcheck-repo
   # generate "explcheck-obsolete.lua" from l3kernel "l3obsolete.txt"
