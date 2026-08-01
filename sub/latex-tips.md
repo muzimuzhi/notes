@@ -111,7 +111,7 @@ TEXINPUTS=build/unpack xelatex test-dev.tex
 - doc sec. 5.6.2 "Path searching options"
 
 ```shell
-# pass a texmf.cnf config line
+# pass a texmf.cnf config line, needs TeX Live 2020 or newer
 kpsewhich --cnf-line=LINE ...
 
 # find files under TDS/texmf-dist/scripts
