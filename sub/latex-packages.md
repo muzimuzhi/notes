@@ -33,7 +33,7 @@ Historic
 [Exec foreign]: https://ctan.org/topic/exec-foreign
 [External code]: https://ctan.org/topic/ext-code
 
-### Tabular and list
+### Table
 
 New table implementations
 
@@ -49,7 +49,7 @@ Add-ons to the classic `tabular`/`array`
 - `hhline` Better horizontal lines in `tabular`s and `array`s
 - `ehhline` Extend the `\hhline` command
 
-List
+### List
 
 - `hlist` Provides `hlist` environment in which `\hitem` starts a horizontal and columned item. Doc is in French only.
 - `enumext` Multi-column enumerate list
@@ -154,14 +154,12 @@ Color management
 
 ## Font Packages
 
-| Name                  | Category   | Description                                  |
-| --------------------- | ---------- | -------------------------------------------- |
-| `xcharter`            | font & pkg | Extension of Bitstream Charter fonts         |
-| `oldstandard`         | font & pkg | Serif, late 19th to early 20th century style |
-| `stickstoo`           | font & pkg | Extra number styles and blackboard bold choices to STIX2 |
-| `logix`               | font & pkg | Supplemental Unicode math symbols, esp. used in logic |
-| `noto-emoji`          | font       | Google's emoji, Android and Linux only       |
-| `twemoji-colr`        | font       | Twitter's emoji                              |
+- `logix` Supplemental Unicode math symbols, esp. used in logic
+- `noto-emoji` Google's emoji, Android and Linux only
+- `oldstandard` Serif, late 19th to early 20th century style
+- `stickstoo` Extra number styles and blackboard bold choices to STIX2
+- `twemoji-colr` Twitter's emoji
+- `xcharter` Extension of Bitstream Charter fonts
 
 ## Documentation Packages
 
