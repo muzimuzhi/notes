@@ -5,7 +5,13 @@
 ### General info
 
 - `git` documentation https://git-scm.com/docs/git
-  - cli conventions https://git-scm.com/docs/gitcli
+- `git help` https://git-scm.com/docs/git-help
+  - concept guides (`git help --guides`)
+    - glossary https://git-scm.com/docs/gitglossary (`git help glossary`)
+  - user interfaces (`git help --user-interfaces`)
+    - cli conventions https://git-scm.com/docs/gitcli (`git help cli`)
+    - repository layout https://git-scm.com/docs/gitrepository-layout (`git help repository-layout`)
+- misc
   - all commands, divided into high level and low level ones
     https://git-scm.com/docs/git#_git_commands
   - `git reset`, `git restore` and `git revert`
@@ -14,11 +20,12 @@
   - Identifier terminology, `<object>`, `<tree-ish>`, `<commit-ish>`, etc.
     https://git-scm.com/docs/git#_identifier_terminology
     `<commit-ish>` vs `<tree-ish>`: https://stackoverflow.com/q/23303549/
-- https://git-scm.com/docs/gitglossary
 - `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
+
 - Pro Git book (living)
   https://git-scm.com/book/en/v2
   https://github.com/progit/progit2
+
 - [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
 - Highlights from Git releases
   - https://github.blog/2019-08-16-highlights-from-git-2-23
