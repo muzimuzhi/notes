@@ -2,6 +2,7 @@
 
 ## Distributions
 
+<!-- # texlive -->
 ### TeX Live
 
 * [SVN repo](https://tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
@@ -27,6 +28,7 @@
   ```
   - `--only-installed`
   - `--list`, list contents
+
 ```bash
 # FIXME: any indent disables highlighting
 # list all schemes (installed are prefixed with "!")
@@ -59,10 +61,24 @@ tlmgr info l3build --json | jq -r '.[] | "local-rev: \(.lrev), remote-rev: \(.rr
 tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5]'
 # ["amsfonts","bibtex","cm","colorprofiles","dvipdfmx"]
 ```
-  - Get space separated list of installed packages (GNU `ggrep` used for its `-P` option):
-    ```bash
-    $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
-    ```
+
+- Get space-separated list of installed packages (GNU `ggrep` used for its `-P` option):
+  ```bash
+  $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
+  ```
+
+- Show or set `tlmgr` options
+  ```shell
+  # list all available options
+  tlmgr option [--json]
+
+  # set a option
+  tlmgr option KEY VALUE
+
+  # unset a option
+  tlmgr option KEY
+  ```
+  - These settings are saved in TLPDB (`$(kpsewhich -var-value=TEXMFROOT)/tlpkg/texlive.tlpdb`), pseudo package `00texlive.installation`
 
 - Show or modify user configurations
   https://tug.org/texlive/doc/tlmgr.html#conf
