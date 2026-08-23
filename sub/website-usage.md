@@ -355,6 +355,11 @@ About the `webrick` workaround
       > _(from removed conditional logic example)_
       - first saw in https://github.com/latex3/latex2e/blob/f7ccd3168fd1fee22d6bf574bd96876124b9ef6b/.github/workflows/main.yaml#L122C39-L122C99 \
         common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
+  - `inputs` context is always coerced to `true` in conditionals
+    - `inputs` context object is possibly empty but never `null`.
+    - In conditionals, empty object is truthy and coerced to `true`.
+      https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#literals
+    - Use `toJSON(inputs) != '{}'` instead.
 
 - run logs
   - `working-directory` is never logged, even when debug logging is enabled
