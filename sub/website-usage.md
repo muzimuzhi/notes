@@ -284,7 +284,7 @@ About the `webrick` workaround
 
 - meta
   - general
-    https://github.com/features/#features-automation
+    https://github.com/features/#features-automation \
     https://github.com/features/actions
   - docs
     https://docs.github.com/actions
@@ -293,7 +293,7 @@ About the `webrick` workaround
   - changelog
     https://github.blog/changelog/label/actions/
   - repos
-    https://github.com/actions/runner
+    https://github.com/actions/runner \
     https://github.com/actions/runner-images
     - GitHub-hosted runners, their YAML labels and included software
 
@@ -345,12 +345,16 @@ About the `webrick` workaround
       - So with `env.MY_ENV_VAR: false`, `if: $MY_ENV_VAR` evaluates to true
 
 - expressions
-  - if-else (ternary operator) in expressions
-    `${{ x && 'ifTrue' || 'ifFalse' }}`
-    > the first value after the `&&` must be truthy
-    https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions#operators
-    - first saw in https://github.com/latex3/latex2e/blob/f7ccd3168fd1fee22d6bf574bd96876124b9ef6b/.github/workflows/main.yaml#L122C39-L122C99
-      common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
+  - conditional logic
+    - (new recommendation) `case()` function
+      - https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#case
+      - `case()` doc replaced conditional logic example in [`github/docs@434787e`](https://github.com/github/docs/commit/434787e1ef307ddb00dfb38763d8413e71a3f01e) (Add case function documentation (#58868), 2026-01-26)
+    - (old, less robust) combination of `&&` and `||` operators
+      `${{ condition && 'ifTrue' || 'ifFalse' }}`
+      > It is important to note that the first value after the `&&` must be truthy. Otherwise, the value after the `||` will always be returned.\
+      > _(from removed conditional logic example)_
+      - first saw in https://github.com/latex3/latex2e/blob/f7ccd3168fd1fee22d6bf574bd96876124b9ef6b/.github/workflows/main.yaml#L122C39-L122C99 \
+        common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
 
 - run logs
   - `working-directory` is never logged, even when debug logging is enabled
