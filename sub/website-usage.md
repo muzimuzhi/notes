@@ -360,6 +360,14 @@ About the `webrick` workaround
     - In conditionals, empty object is truthy and coerced to `true`.
       https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#literals
     - Use `toJSON(inputs) != '{}'` instead.
+  - workflow triggered by `workflow_call` never has `github.event_name == 'workflow_call'` held
+    - workflow triggered by `workflow_call` inherits workflow-level data from the caller workflow, so its [`github.event`](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_call), `github.event_name`, and `github.workflow_ref` are all about the caller workflow
+    - determine if triggered by `workflow_call` event\
+      https://github.com/muzimuzhi/hello-github-actions/pull/59 \
+      https://github.com/orgs/community/discussions/160735#discussioncomment-18094042 \
+      - if `github.workflow_ref != job.workflow_ref` holds
+      - or, when `job` context is not available, use `!contains(github.workflow_ref, '/.github/workflows/REUSABLE_WORKFLOW_FILENAME@refs/')`
+      - or, use a dedicated `workflow_call` input
 
 - run logs
   - `working-directory` is never logged, even when debug logging is enabled
