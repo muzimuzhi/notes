@@ -33,7 +33,7 @@
 
 ### Configuration
 
-- new syntaxes and options since v2.46.0
+- new `git config` subcommands and options since 2.46.0 (29 Jul 2024)
   for example, `git config KEY VALUE` => `git config set KEY VALUE`
   https://git-scm.com/docs/git-config#_deprecated_modes
   https://github.blog/open-source/git/highlights-from-git-2-46/
@@ -73,6 +73,7 @@
     `GIT_TRACE=1 git <alias> ...` shows the actual commands (`/bin/sh -c `); alternatively, `git var GIT_SHELL_PATH` shows the path to `sh`;
     https://stackoverflow.com/a/46698535
     https://stackoverflow.com/a/65086817
+    https://git-scm.com/docs/git#Documentation/git.txt-GITTRACE
 
 ### Show status
 
