@@ -44,10 +44,11 @@ New table implementations
 
 Add-ons to the classic `tabular`/`array`
 
-- `fcolumn` Adds column type `F/f` for aligning text and currency amounts, and`\sumline` command.
 - `boldline` Variable-width h/v-lines in tabular. Contained in `shipunov` bundle
+- `fcolumn` Adds column type `F/f` for aligning text and currency amounts, and`\sumline` command.
 - `hhline` Better horizontal lines in `tabular`s and `array`s
-- `ehhline` Extend the `\hhline` command
+  - `ehhline` Extend the `\hhline` command
+- `multicoltab` Free flow table for multicols layouts
 
 ### List
 
