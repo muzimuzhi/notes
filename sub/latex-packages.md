@@ -68,6 +68,10 @@ Add-ons to the classic `tabular`/`array`
 
 ### Demonstration and debugging
 
+- Layout
+  - `layout` page layout
+  - `layouts` page and document element layouts
+  - `jiffy` TikZ upgrade of `layout`
 - `unicodefonttable` Font table generator for unicode and 7/8-bit fonts. Replace `fonttable`
 - `visualtoks` Typeset token list in TeXbook style, with catcodes in subscript
 - `unravel` Watch TeX digest tokens
