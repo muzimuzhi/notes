@@ -250,6 +250,39 @@ Change remote
   git log --reverse
   ```
 
+### Hooks
+
+- Supported hooks\
+  https://git-scm.com/docs/githooks
+- New config-based hooks since Git 2.54 (20 Apr 2026)
+  - intro https://github.blog/open-source/git/highlights-from-git-2-54/#h-config-based-hooks
+  - doc https://git-scm.com/docs/git-hook#_configuration
+  - example: `pgf-tikz/pgf` repo
+    ```
+    [hook "extract-examples"]
+      event = pre-commit
+      event = pre-push
+      # wrap commands in a function to accept (and drop) variable arguments
+      # `pre-commit` hook takes no parameters, while `pre-push` hook takes two
+      command = "\
+        f() { \
+          l3build examples > /dev/null \
+            || { echo \"ERROR 'l3build examples' failed\" >&2; exit 1; }; \
+          [[ -z \"$(git status --porcelain)\" ]] \
+            || { echo \"ERROR Example tests are not up to date\" >&2; \
+            git status --porcelain; exit 1; }; \
+        }; f"
+    ```
+- `git hook` command\
+  https://git-scm.com/docs/git-hook
+  ```
+  $ git hook list <hook-name>
+  $ git hook run <hook-name>
+  ```
+  - `git hook run` is different from auto-triggered hook runs: arguments are not passed to the hook command (using `"$@"`) in the `git hook run` case
+- Trace hook runs using `GIT_TRACE=1`\
+  https://git-scm.com/docs/git#Documentation/git.txt-GITTRACE
+
 ### Large File Storage (LFS)
 
 - homepage: https://git-lfs.github.com/
