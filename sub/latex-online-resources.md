@@ -37,6 +37,8 @@ For basic uses, some guidelines of MathJax can be a good learning resource of La
   Draw desired (math) symbols and receive suggestions about symbol appearance, respective LaTeX command, and relied package.
 - LaTeX Tables generator https://www.tablesgenerator.com/ \
   Draw tables as using MS Office, and export output in LaTeX codes.
+- TikZ Editor https://tikz.dev/editor/web \
+  Also as desktop app https://tikz.dev/editor/.
 - Commutative diagram editor https://tikzcd.yichuanshen.de/ \
   Draw commutative diagram interactively with multiple kinds of arrows, and export it as LaTeX codes based on package `tikzcd`.
 - Chemical molecules editor https://py-chemist.com/mol_2_chemfig \
