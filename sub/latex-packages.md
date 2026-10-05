@@ -77,6 +77,10 @@ Add-ons to the classic `tabular`/`array`
 - `unravel` Watch TeX digest tokens
 - `xmeaning` Enhanced `\meaning`
 
+### Math
+
+- `freemath` maths without backslashes
+
 ### LuaTeX-only
 
 - `lua-ul` Underlining
