@@ -164,6 +164,7 @@ Color management
 ## Font Packages
 
 - `cmgraded` Computer Modern in different grades of blackness, OTF & Type 1
+  - similar to `mlmodern`
 - `logix` Supplemental Unicode math symbols, esp. used in logic
 - `noto-emoji` Google's emoji, Android and Linux only
 - `oldstandard` Serif, late 19th to early 20th century style
