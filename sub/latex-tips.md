@@ -447,6 +447,7 @@ $ tlmgr conf texmf OSFONTDIR <path>
 
 - tikz https://tikz.dev/
 - pgfplots https://tikz.dev/pgfplots
+  - more on tikz.dev: chemfig, forest, nicematrix, tcolorbox, tikz-cd, tikz-euclide, etc.
 - beamer https://www.beamer.plus/home.html
 
 ### `latex3`
