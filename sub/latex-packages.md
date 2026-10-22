@@ -83,6 +83,7 @@ Add-ons to the classic `tabular`/`array`
 
 ### LuaTeX-only
 
+- `linebreaker` Prevent overflow boxes
 - `lua-ul` Underlining
 - `lua-unicode-math` OpenType Math font support
 - `lua-visual-debug` Visual debugging
