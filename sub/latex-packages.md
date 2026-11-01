@@ -80,7 +80,8 @@ Add-ons to the classic `tabular`/`array`
 
 ### Math
 
-- `freemath` maths without backslashes
+- `freemath` Maths without backslashes
+- `matchedsplit` Matched delimiters across manually broken equations
 
 ### LuaTeX-only
 
