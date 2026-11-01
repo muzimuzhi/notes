@@ -8,6 +8,7 @@ Programming in TeX
 
 - `parselines` Simple input line parser
 - `tokstools` Match, capture, and replace tokens using PEG-type grammars
+- `scontents` Store LaTeX contents in memory or files
 - `switch` Constant-time expandable switch/case
 
 Execute or bridge to foreign languages
