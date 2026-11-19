@@ -105,6 +105,7 @@ Add-ons to the classic `tabular`/`array`
 - `fontsetup` A front-end to `fontspec`, for selected fonts with math support
 - `keytheorems` Good alternative to `thmtools`
 - `svg-animate` Generate animated SVG diagrams with TikZ
+- `wrapblock` Wrap a closed block of text around an image
 
 ### Misc - old
 
